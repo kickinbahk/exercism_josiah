@@ -1,8 +1,8 @@
 
 var Hamming = function () {}
 
-Hamming.prototype.compute = function () {
-  
+Hamming.prototype.compute = function (strand1, strand2) {
+  return 0 
 }
 
 module.exports = Hamming
