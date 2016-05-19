@@ -1,3 +1,8 @@
+/*eslint-disable
+space-before-function-paren,
+quotes, semi, no-undef,
+space-before-function-paren */
+
 var HelloWorld = require('./hello-world');
 
 describe('Hello World', function() {
