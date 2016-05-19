@@ -3,11 +3,11 @@ var Leap = function (input) {
 }
 
 Leap.prototype.isLeap = function () {
-  if (this.input % 4 === 0) {
+  var year = this.input
+  if (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) {
     return true
-  } else {
-    return false
   }
+  return false
 }
 
 module.exports = Leap
