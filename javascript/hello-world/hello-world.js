@@ -4,13 +4,13 @@
 // Make sure to look at hello-world.spec.js--that should give you some hints about what is
 // expected here.
 
-var HelloWorld = function() {}
+var HelloWorld = function () {}
 
 HelloWorld.prototype.hello = function (input) {
   if (input) {
-    return `Hello, ${input}`
+    return `Hello, ${input}!`
   } else {
-    return `Hello, World`
+    return `Hello, World!`
   }
 }
 
