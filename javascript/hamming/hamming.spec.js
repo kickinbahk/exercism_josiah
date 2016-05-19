@@ -1,3 +1,9 @@
+/*eslint-disable
+space-before-function-paren,
+quotes, semi, no-undef,
+space-before-function-paren,
+padded-blocks, comma-spacing */
+
 var Hamming = require('./hamming');
 
 describe('Hamming', function () {
