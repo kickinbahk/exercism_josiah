@@ -3,12 +3,12 @@
 // convenience to get you started writing code faster.
 //
 
-var Bob = function() {};
+var Bob = function () {}
 
-Bob.prototype.hey = function(input) {
+Bob.prototype.hey = function (input) {
 //
 // YOUR CODE GOES HERE
 //
-};
+}
 
-module.exports = Bob;
+module.exports = Bob
