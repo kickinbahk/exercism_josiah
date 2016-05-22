@@ -15,6 +15,8 @@ function traslateDNAToRNA (dnaString) {
       rnaArray.push('C')
     } else if (dnaArray[i] === 'A') {
       rnaArray.push('U')
+    } else if (dnaArray[i] === 'T') {
+      rnaArray.push('A')
     }
   }
   return rnaArray
