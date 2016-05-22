@@ -1,10 +1,10 @@
 var DnaTranscriber = function () {}
 
 DnaTranscriber.prototype.toRna = function (input) {
-  return compare(input).join('')
+  return traslateDNAToRNA(input).join('')
 }
 
-function compare (dnaString) {
+function traslateDNAToRNA (dnaString) {
   var dnaArray = dnaString.split('')
   var rnaArray = []
 
