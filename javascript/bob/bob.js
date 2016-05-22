@@ -6,7 +6,15 @@
 var Bob = function () {}
 
 Bob.prototype.hey = function (input) {
-  return 'Whatever.'
+  if (input.includes(
+    'A' || 'E' || 'I' || 'O' || 'U' || '!'
+  )) {
+    return 'Whoa, chill out!'
+  } else if (input.includes('?')) {
+    return 'Sure.'
+  } else {
+    return 'Whatever.'
+  }
 }
 
 module.exports = Bob
