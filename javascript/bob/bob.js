@@ -8,6 +8,7 @@ Bob.prototype.hey = function (string) {
   let chillOut = 'Whoa, chill out!'
   let fine = 'Fine. Be that way!'
 
+  // check for spaces
   if (string.match(/^\s*$/)) {
     return fine
   }
@@ -17,14 +18,17 @@ Bob.prototype.hey = function (string) {
     return whatev
   }
 
-  // check for uppercase
+  // check for uppercase and not catch digits
   if (string === string.toUpperCase() && string.toLowerCase() !== string) {
     return chillOut
   }
 
+  // check if last character is question mark
   if (string.endsWith('?')) {
     return sure
   }
+
+  // Nothing matched
   return whatev
 }
 
