@@ -6,11 +6,11 @@
 var Bob = function () {}
 
 Bob.prototype.hey = function (input) {
-  if (input.includes(
-    'A' || 'E' || 'I' || 'O' || 'U' || '!'
-  )) {
+  if (input.match(/[A|E|I|O|U]/) && input.endsWith('.')) {
+    return 'Whatever.'
+  } else if (input.match(/[A|E|I|O|U]/)) {
     return 'Whoa, chill out!'
-  } else if (input.includes('?')) {
+  } else if (input.endsWith('?')) {
     return 'Sure.'
   } else {
     return 'Whatever.'
