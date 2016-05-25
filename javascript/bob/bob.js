@@ -1,10 +1,6 @@
 var Bob = function () {}
 
-Bob.prototype.hey = function (input) {
-  return getResponse(input)
-}
-
-function getResponse (string) {
+Bob.prototype.hey = function (string) {
   'use strict'
 
   let sure = 'Sure.'
