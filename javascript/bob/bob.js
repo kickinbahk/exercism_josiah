@@ -1,20 +1,35 @@
-//
-// This is only a SKELETON file for the "Bob" exercise. It's been provided as a
-// convenience to get you started writing code faster.
-//
-
 var Bob = function () {}
 
 Bob.prototype.hey = function (input) {
-  if (input.match(/[A|E|I|O|U]/) && input.endsWith('.')) {
-    return 'Whatever.'
-  } else if (input.match(/[A|E|I|O|U]/)) {
-    return 'Whoa, chill out!'
-  } else if (input.endsWith('?')) {
-    return 'Sure.'
-  } else {
-    return 'Whatever.'
+  return getResponse(input)
+}
+
+function getResponse (string) {
+  'use strict'
+
+  let sure = 'Sure.'
+  let whatev = 'Whatever.'
+  let chillOut = 'Whoa, chill out!'
+  let fine = 'Fine. Be that way!'
+
+  if (string.match(/^\s*$/)) {
+    return fine
   }
+
+  // check for period...assume it is just statement
+  if (string.endsWith('.')) {
+    return whatev
+  }
+
+  // check for uppercase
+  if (string === string.toUpperCase() && string.toLowerCase() !== string) {
+    return chillOut
+  }
+
+  if (string.endsWith('?')) {
+    return sure
+  }
+  return whatev
 }
 
 module.exports = Bob
