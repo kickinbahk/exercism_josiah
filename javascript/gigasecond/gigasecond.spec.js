@@ -1,3 +1,9 @@
+/*eslint-disable
+space-before-function-paren,
+quotes, semi, no-undef,
+space-before-function-paren,
+padded-blocks, comma-spacing */
+
 var Gigasecond = require('./gigasecond');
 
 describe('Gigasecond', function() {
@@ -27,5 +33,3 @@ describe('Gigasecond', function() {
     expect(gs.date()).toEqual(expectedDate);
   });
 });
-
-
