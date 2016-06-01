@@ -4,7 +4,7 @@ var Gigasecond = function (givenDate) {
 
 Gigasecond.prototype.date = function () {
   var convertedToMilliseconds = this.newDate.getTime()
-  return new Date(convertedToMilliseconds + 1000000000000)
+  return new Date(convertedToMilliseconds + Math.pow(10, 12))
 }
 
 module.exports = Gigasecond
